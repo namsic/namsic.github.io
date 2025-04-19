@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .TableOfContents }}
+  <ul>
+    {{ range .Params.tags }}
+      <li><a href="">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  <p>{{ .Content }}</p>
+{{ end }}

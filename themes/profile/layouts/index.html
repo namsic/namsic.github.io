@@ -1,0 +1,51 @@
+{{ define "main" }}
+  {{ with .Params }}
+    <h1>{{ .name }}</h1>
+    <ul>
+      <li>Phone: {{ .phone }}</li>
+      <li>E-mail: {{ .email }}</li>
+      <li>Github: <a href="https://github.com/{{ .github }}">@{{ .github }}</a></li>
+    </ul>
+  {{ end }}
+
+  {{ .Content }}
+
+  <h2>Projects</h2>
+  <ul>
+  </ul>
+
+  <h2>Experience</h2>
+  <ul>
+    {{ range site.Data.profile.experience }}
+      <li>
+        <p>{{ .period }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .role }}</p>
+        <ul>
+          {{ range .skills }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        <p>{{ .description | markdownify }}</p>
+      </li>
+    {{ end }}
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    {{ range site.Data.profile.education }}
+      <li>
+        <p>{{ .period }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .major }}</p>
+      </li>
+    {{ end }}
+  </ul>
+
+  <h2>Licences</h2>
+  <ul>
+    {{ range site.Data.profile.licence }}
+      <li>{{ .title }}</li>
+    {{ end }}
+  </ul>
+{{ end }}
