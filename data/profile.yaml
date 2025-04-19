@@ -1,0 +1,30 @@
+education:
+  - title: 국민대학교 (학사)
+    major: 소프트웨어학부 소프트웨어전공
+    period: 2017.03 - 2023.02
+experience:
+  - title: JaM2in
+    role: ARCUS 캐시 서버 개발
+    period: "2022.06 -"
+    skills:
+      - C
+      - Go
+      - Kubernetes
+    description: |
+      - [arcus-memcached](https://github.com/naver/arcus-memcached) 개발
+      - ARCUS 모니터링 도구 개발
+        - Prometheus exporter
+        - Grafana dashboard
+  - title: 대한민국 공군
+    role: 암호취급병
+    period: "2018.01 - 2019.12"
+licence:
+  - title: 자동차 운전면허 1종 보통
+  - title: 리눅스마스터 2급
+  - title: 네트워크관리사 2급
+  - title: SQL개발자 (SQLD)
+  - title: 정보처리기능사
+  - title: ITQ(아래한글, 한글파워포인트, 한글엑셀, 한글엑세스)
+  - title: GTQ
+  - title: 컴퓨터활용능력 1급
+  - title: 워드프로세서 1급
