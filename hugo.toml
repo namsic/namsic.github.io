@@ -1,5 +1,8 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://namjae-kim.namsic.dev/'
+languageCode = 'ko-KR'
+title = 'Namjae Kim'
 theme = 'profile'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
