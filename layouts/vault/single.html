@@ -1,10 +1,12 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ .TableOfContents }}
-  <ul>
+  <div>
     {{ range .Params.tags }}
-      <li><a href="">{{ . }}</a></li>
+      <span class="tag"><a href="">{{ . }}</a></span>
     {{ end }}
-  </ul>
-  <p>{{ .Content }}</p>
+  </div>
+  {{ .TableOfContents }}
+  <article>
+    {{ .Content }}
+  </article>
 {{ end }}

@@ -23,7 +23,7 @@
         <p>{{ .role }}</p>
         <ul>
           {{ range .skills }}
-            <li>{{ . }}</li>
+            <li class="tag">{{ . }}</li>
           {{ end }}
         </ul>
         <p>{{ .description | markdownify }}</p>
